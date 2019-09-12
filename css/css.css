@@ -1,4 +1,5 @@
 html, body {
+	box-sizing: border-box;
 	font-size: 1.2em;
 	margin: 0;
 	padding: 0;
@@ -8,15 +9,18 @@ html, body {
 
 body {
 	color: white;
-	background: linear-gradient(#000, #444);
+	padding-top: 10%;
+	background: linear-gradient(#000, #555);
 }
 
 .main_content {
-	border: 1px solid white;
+	box-shadow: 0px 0px 18px 5px #999;
+	background: linear-gradient(#333, #000);
+	/*border: 1px solid white;*/
 	border-radius: 10px;
 	padding: 20px;
 	width: 30%;
-	margin: 10% auto 0 auto;
+	margin: 0 auto 0 auto;
 	text-align: center;
 }
 

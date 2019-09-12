@@ -9,7 +9,7 @@ const myButton = document.getElementById('myButton');
 
 
 var message1 = document.createElement('p');
-message1.innerHTML = "The moon's current phase value is " + decimalPhase.toFixed(2);
+message1.innerHTML = "The moon's current phase value is " + decimalPhase.toFixed(2) * 2;
 infoBox.appendChild(message1);
 
 var message2 = document.createElement('p');
