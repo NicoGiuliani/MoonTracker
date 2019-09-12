@@ -4,7 +4,6 @@
  https://github.com/mourner/suncalc
 */
 
-
 (function () { 'use strict';
 
 // shortcuts for easier to read formulas
@@ -309,7 +308,3 @@ else if (typeof define === 'function' && define.amd) define(SunCalc);
 else window.SunCalc = SunCalc;
 
 }());
-
-
-
-
