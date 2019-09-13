@@ -1,6 +1,7 @@
 var decimalPhase = SunCalc.getMoonIllumination(new Date()).phase;
 var phase = decimalToPhase(decimalPhase);
 var calendar = document.getElementById("calendar");
+// var mainImage = document.getElementById("logo_image");
 var infoBox = document.getElementsByClassName("info")[0];
 const inputBar = document.getElementById('myTextInput');
 const myButton = document.getElementById('myButton');
@@ -9,7 +10,7 @@ const myButton = document.getElementById('myButton');
 
 
 var message1 = document.createElement('p');
-message1.innerHTML = "The moon's current phase value is " + decimalPhase.toFixed(2) * 2;
+message1.innerHTML = "The moon is  " + (decimalPhase.toFixed(2) % 0.5) * 200 + "% full";
 infoBox.appendChild(message1);
 
 var message2 = document.createElement('p');
@@ -31,10 +32,10 @@ function decimalToPhase(decimalPhase) {
     var range = 360/8;
     var low = 360 - range/2;
     var high = (low + range) % 360;
-    var angles = ["New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", 
-                  "Full Moon", "Waning Gibbous", "Last Quarter", "Waning Crescent"];
+    var angles = ["New", "Waxing Crescent", "First Quarter", "Waxing Gibbous", 
+                  "Full", "Waning Gibbous", "Last Quarter", "Waning Crescent"];
     
-    if (degrees >= low || degrees < high) { return "New Moon"; }
+    if (degrees >= low || degrees < high) { return "New"; }
     for (angle in angles) {
         if (degrees >= low && degrees < high) { return angles[angle]; } 
         low = (low + range) % 360;

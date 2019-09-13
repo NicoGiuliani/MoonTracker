@@ -1,6 +1,6 @@
 html, body {
 	box-sizing: border-box;
-	font-size: 1.2em;
+	font-size: 1.8em;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -9,13 +9,16 @@ html, body {
 
 body {
 	color: white;
-	padding-top: 10%;
-	background: linear-gradient(#000, #555);
+	padding-top: 2.5rem;		
+	background: linear-gradient(#101, #111);
+	/*font-family: 'Comfortaa', cursive;*/
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 4px;
 }
 
 .main_content {
-	box-shadow: 0px 0px 18px 5px #999;
-	background: linear-gradient(#333, #000);
+	/*box-shadow: 0px 0px 140rem 5px #444;
+	background: linear-gradient(#101, #000);*/
 	/*border: 1px solid white;*/
 	border-radius: 10px;
 	padding: 20px;
